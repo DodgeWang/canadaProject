@@ -1,0 +1,4 @@
+pang3	Yinuo	0	11	Female	13/03/2000	0					Albert Group																0
+wang1	Haha	904	12	Female	23/05/1999	598993756	Congbo	Bai	Wenhong	Qiu	Victoria Group																30
+dang	Xuesong	1013	12	Male	06/11/1997	713587723	Feng	Bai	Guojing	Ji	Albert Group						ENG2Dj	English, Grade 10	14.2	8	3						24
+li4	Tianheng	1006	12	Male	05/10/1998	926382839	Xiaodong	Bao	Li	Li	Albert Group	ENG4Uf	English 12, University Prep.	71.1	0	0	SCH4Ub	Chemistry, Grade 12	93.2	1	0	LKMDUd	Mandarin, Grade 12	91	1	10	80

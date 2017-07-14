@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style type="text/css">
+    td img {
+        width: 100px;
+        height: 70px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="contentbox-title">
+        <p>活动列表</p>
+    </div>
+    <div class="contentbox">
+        <div class="optionBox">
+            <div class="optionItem">
+                <span>分类查询:</span>
+                <select id="classifySele" class="selectStyle">
+                    <option value="-1">全部</option>
+                </select>
+            </div>
+        </div>
+        <div class="tableBox">
+            <table cellspacing="0" id="datalist">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>标题</th>
+                        <th>url链接</th>
+                        <th>图片</th>
+                        <th>类型</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>测试</td>
+                        <td>http://www.baidu.com</td>
+                        <td><img src="https://www.baidu.com/img/bd_logo1.png"></td>
+                        <td>
+                            <button class="red_button" onclick="resetPass(1)">重置密码</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div id="noDataBox" class="noDataBox">
+            	暂时没有数据
+            </div>
+            <div id="pageBox" class="page-box">
+                <button id="prev">上一页</button>
+                <button id="next">下一页</button>
+            </div>
+        </div>
+
+        <!-- 修改编辑框 -->
+        <div id="editBox">
+            <div class="formBox">
+                <ul>
+                <li style="display: none;">
+                        <span class="formBoxTitle">ID：</span>
+                        <input type="text" name="activityId" class="formBoxText"/>
+                </li>
+                <li>
+                    <span class="formBoxTitle">标题：</span>
+                    <input type="text" name="title" class="formBoxText" />
+                </li>
+                <li>
+                    <span class="formBoxTitle">URL连接：</span>
+                    <input type="text" name="url" class="formBoxText" />
+                </li>
+                <li>
+                    <span class="formBoxTitle">活动类型：</span>
+                    <select id="classifyEdit" class="selectStyle" style="margin-left:10px;">
+                    </select>
+                </li>
+                <li style="height: auto; overflow: hidden;">
+                    <span class="formBoxTitle">封面图片：</span>
+                    <div class="imgUploadBox">
+                        <img src="../img/noimg.jpg" style="width:100px; height: 50px;" id="imageshow">
+                        <input type="file" name="file" class="formBoxText" id="imgfile"/>
+                        <input type="text" name="imgpath" style="display: none;" />
+                    </div> 
+                </li>
+                <li>
+                    <button class="formBoxButton" id="formSubmit">添加</button>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- 遮罩 -->
+        <div id="coverCloth"></div>
+
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+    <script type="text/javascript" src="../js/activityManagement.js"></script>
+</body>
+
+</html>

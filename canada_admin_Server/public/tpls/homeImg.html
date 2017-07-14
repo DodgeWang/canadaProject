@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页大图</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <div class="contentbox-title">
+        <p>首页大图</p>
+    </div>
+    <div class="contentbox">
+        <div class="formBox" id="formBox">
+            <ul>
+                <li style="height: auto; overflow: hidden;">
+                    <span class="formBoxTitle">首页大图：</span>
+                    <div class="imgUploadBox">
+                        <img src="../img/noimg.jpg" style="width:100px; height: 50px;" id="imageshow">
+                        <input type="file" name="file" class="formBoxText" id="imgfile"/>
+                        <input type="text" name="imgpath" style="display: none;" />
+                    </div> 
+                </li>
+                <li>
+                    <button class="formBoxButton" id="formSubmit">确定</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+    <script type="text/javascript" src="../js/homeImg.js"></script>
+</body>
+
+</html>

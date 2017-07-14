@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>分类列表</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <div class="contentbox-title">
+        <p>分类列表</p>
+    </div>
+    <div class="contentbox">
+        <div class="tableBox">
+            <table cellspacing="0" id="datalist">
+                <tr>
+                    <th>#</th>
+                    <th>分类名</th>
+                    <th>首页显示</th>
+                    <th>操作</th>
+                </tr>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>测试</td>
+                    <td>
+                        <button class="green_button" onclick="edit(1,'wang')">修改</button>
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+
+        <!-- 修改编辑框 -->
+        <div id="editBox">
+            <div class="formBox">
+                <ul>
+                	<li style="display: none;">
+                        <span class="formBoxTitle">类ID：</span>
+                        <input type="text" name="classifiId" class="formBoxText"/>
+                    </li>
+                    <li>
+                        <span class="formBoxTitle">类名：</span>
+                        <input type="text" name="name" class="formBoxText" />
+                    </li>
+                    <li>
+                        <span class="formBoxTitle">首页显示：</span>
+                        <div class="radioList">
+                            <input type="radio" name="isShow" value="1"><span>显示<span>
+                            <input type="radio" name="isShow" value="0" style="margin-left:10px;"><span>不显示<span>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="formBoxButton" id="formSubmit">确认</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 遮罩 -->
+        <div id="coverCloth"></div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/classificationList.js"></script>
+</body>
+
+</html>

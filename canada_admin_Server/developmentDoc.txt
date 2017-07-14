@@ -1,0 +1,74 @@
+加拿大项目API接口
+
+系统接口：
+后台登陆：请求方式（post）上传参数（用户名、密码）
+/admin/login
+参数：username    password
+
+
+后台退出：请求方式 （get）
+/admin/exit
+参数：无
+
+
+管理员密码修改：请求方式（post）上传参数（旧密码、新密码）
+/admin/resetPassword
+参数：oldpassword(旧密码)  newpassword(新密码)
+
+
+首页轮播图片：
+1.图片上传：请求方式（post） 上传参数（封面图）
+
+活动管理：
+1.活动添加：请求方式（post） 上传参数（标题、封面图、连接、所属类别）
+2.活动删除：请求方式（get） 上传参数（活动id）
+ 
+3.活动列表：请求方式（get）   上传参数（分类id、查询条数、查询页数）
+/activity/list
+参数：classifyId(分类id,-1时代表查询全部)、page(页码1开始)、size(显示条数)
+
+
+4.活动详情：请求方式（get）   上传参数（活动id）
+5.活动修改：请求方式（post） 上传参数（活动id、标题、封面图、连接、所属类别）
+
+
+
+6.活动分类列表：请求方式（get）
+/classification/list
+
+7.活动分类添加：请求方式（post） 上传参数（活动分类名）
+/classification/add
+参数 ：name(分类名)
+ 
+8.活动分类修改：请求方式（post） 上传参数（活动分类id，修改后的名字）
+/classification/revise
+参数： id(分类id)   name(修改后的名字)
+
+
+
+数据导入：
+1.数据导入：请求方式（post）上传参数（数据类型、txt文本）
+/fileuploads     
+参数 ：fileType(数据类型)、file(txt文本文件)
+
+
+
+用户管理：
+1.用户列表：请求方式（get） 上传参数（查询条数、查询页数）
+/user/list
+参数：page(页码1开始)、size(每页显示条数)
+
+2.用户密码重置：请求方式（post）上传参数（用户id）
+/user/resetPassword
+参数：userId(用户ID)
+
+
+
+上传文件夹：
+dataUpload（导入学生信息数据的文本文件）
+imgUpload（上传的活动图片和首页轮播图片）
+
+
+上传数据表的格式：
+UTF-8 Unicode 文本（.txt）
+
